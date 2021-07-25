@@ -1,2 +1,0 @@
-# BettorFaster
-Bettor-Faster
