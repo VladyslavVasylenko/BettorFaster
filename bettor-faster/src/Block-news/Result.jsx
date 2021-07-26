@@ -9,34 +9,6 @@ class Result extends Component {
   render() {
     return (
       <div className="result">
-        {/* { this.props &&
-          <div className="result__box">
-            <div className="result__box">
-              <p className="result__title">{this.props.title}</p>
-              <p className="result__text subtitle">{this.props.body}</p>
-            </div>
-            <div className="result__box">
-              <p className="result__title">{this.props.title}</p>
-              <p className="result__text subtitle">{this.props.body}</p>
-            </div>
-            <div className="result__box">
-              <p className="result__title">{this.props.title}</p>
-              <p className="result__text subtitle">{this.props.body}</p>
-            </div>
-            <div className="result__box">
-              <p className="result__title">{this.props.title}</p>
-              <p className="result__text subtitle">{this.props.body}</p>
-            </div>
-            <div className="result__box">
-              <p className="result__title">{this.props.title}</p>
-              <p className="result__text subtitle">{this.props.body}</p>
-            </div>
-            <div className="result__box">
-              <p className="result__title">{this.props.title}</p>
-              <p className="result__text subtitle">{this.props.body}</p>
-            </div>
-          </div>
-        } */}
         <Card className="root">
           <CardActionArea>
             <CardMedia
