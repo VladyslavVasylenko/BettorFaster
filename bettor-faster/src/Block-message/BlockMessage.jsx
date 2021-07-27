@@ -30,14 +30,14 @@ class BlockMessage extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-
+    
     alert("Submit bro");
   }
 
   render() {
     return (
       <>
-        <form action="" className="form" onSubmit={this.handleFormSubmit}>
+        <form action='' className="form" onSubmit={this.handleFormSubmit}>
           <input
             className="form-input-text"
             value={this.state.title}
