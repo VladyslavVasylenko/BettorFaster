@@ -50,9 +50,6 @@ code {
 
 .form {
   padding: 50px 15px;
-}
-
-.input-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,17 +57,7 @@ code {
   align-self: center;
 }
 
-.hidden {
-  display: none;
-}
-
-.form-control {
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  margin-bottom: 5px;
-}
-
-.form-control-text {
+.form-input-text {
   max-width: 300px;
   height: 100%;
   font-family: 'Times New Roman', Times, serif;
@@ -78,23 +65,7 @@ code {
   margin-bottom: 15px;
 }
 
-.text-title {
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  text-transform: uppercase;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.text-text{
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.btn {
+.form-btn {
   font-size: 18px;
   margin-bottom: 15px;
   font-family: 'Times New Roman', Times, serif;
@@ -103,23 +74,3 @@ code {
   color: rgb(0, 0, 0);
   padding: 0 5px;
 }
-
-.btn-send {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-family: 'Times New Roman', Times, serif;
-  text-transform: uppercase;
-  background-color: green;
-  color: white;
-}
-
-.btn-delete {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-family: 'Times New Roman', Times, serif;
-  text-transform: uppercase;
-  background-color: red;
-  color: white;
-}
-
-/* Second */

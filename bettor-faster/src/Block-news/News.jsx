@@ -8,19 +8,20 @@ import Typography from '@material-ui/core/Typography';
 export default class News extends React.Component {
   constructor(props) { 
     super(props);
+
     this.state = {
       loading: true,
-      item: [],
+      posts: [],
     };
   }
 
   async componentDidMount() {
-    const url = "https://jsonplaceholder.typicode.com/posts";
+    const url = 'https://jsonplaceholder.typicode.com/posts';
     const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
+    const posts = await response.json();
+
     this.setState({ 
-      item: data, 
+      posts, 
       loading: false,
     });
   }
@@ -29,27 +30,30 @@ export default class News extends React.Component {
     if (this.state.loading) {
       return <div>Loading...</div>;
     }
-    if (!this.state.item.length) {
+
+    if (!this.state.posts.length) {
       return <div>Didn't get a posts</div>;
-    } 
+    }
       return (
         <>
           <div className="result">
-            {this.state.item.map((items) => (
-              <div key={items.title + items.text}>
+            {this.state.posts.map((post) => (
+              <div key={post.id}>
                 <Card className="main-container">
                   <CardActionArea className="container">
-                    <CardMedia
-                      className="media"
-                      image="https://picsum.photos/200"
-                      title="Contemplative Reptile"
-                    />
+                  <CardMedia
+                    className="media"
+                    image= {`https://picsum.photos/200/200?random=${post.id}`}
+                    title="Contemplative Reptile"
+                  />
+
                     <CardContent>
                       <Typography gutterBottom component="h2" className="title">
-                        {items.title}
+                        {post.title}
                       </Typography>
+
                       <Typography component="p" className="text">
-                        {items.body}
+                        {post.body}
                       </Typography>
                     </CardContent>
                   </CardActionArea>
@@ -57,7 +61,6 @@ export default class News extends React.Component {
               </div>
             ))}
           </div>
-          <button className="btn">Next</button>
         </>
       );
     
