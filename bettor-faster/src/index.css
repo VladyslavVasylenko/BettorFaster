@@ -22,7 +22,7 @@ code {
 }
 
 .main-container {
-  max-width: 345px;
+  width: 345px;
   margin: 5px;
 }
 

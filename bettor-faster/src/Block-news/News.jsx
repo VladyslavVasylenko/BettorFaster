@@ -47,7 +47,7 @@ export default class News extends React.Component {
                     title="Contemplative Reptile"
                   />
 
-                    <CardContent>
+                    <CardContent className="media">
                       <Typography gutterBottom component="h2" className="title">
                         {post.title}
                       </Typography>

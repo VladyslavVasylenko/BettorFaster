@@ -79,7 +79,7 @@ class BlockMessage extends Component {
                   title="Contemplative Reptile"
                 />
 
-                <CardContent>
+                <CardContent className="media">
                   <Typography gutterBottom component="h2" className="title">
                     {this.state.title}
                   </Typography>
