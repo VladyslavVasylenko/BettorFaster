@@ -36,9 +36,17 @@ class BlockMessage extends Component {
   handleFormSubmit = (event) => {
     event.preventDefault();
 
-    alert("Submit bro");
+    alert("Do you want send post?");
 
     this.setState({showMessage: true});
+  }
+
+  handlePostDelete = (event) => {
+    event.preventDefault();
+
+    alert("Do you want delete post?");
+
+    this.setState({showMessage: false});
   }
 
   render() {
@@ -67,6 +75,9 @@ class BlockMessage extends Component {
 
           <button type="submit" name="submit" className="form-btn"> 
             Submit
+          </button>
+          <button type="delete" name="delete" className="form-btn" onClick={this.handlePostDelete}> 
+            Delete
           </button>
         </form>
         {this.state.showMessage && 
